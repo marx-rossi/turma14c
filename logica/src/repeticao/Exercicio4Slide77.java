@@ -1,0 +1,65 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class Exercicio4Slide77 {
+public static void main(String[] args) {
+		
+		String nome = "kkk";
+		String nome_velho = "kkk";
+		String nome_novo = "kkk";
+		int idade = 0;
+		int idade_velho = 0;
+		int idade_novo = 999999;
+		float soma_idade = 0;
+		int maior18 = 0;
+		int count = 0;
+		String x = "kkk";
+		
+		do {
+			nome = JOptionPane.showInputDialog("Digite o nome da pessoa");
+			idade = Integer.parseInt(JOptionPane.showInputDialog("Digite a idade da pessoa"));
+			x = JOptionPane.showInputDialog("Gostaria de inserir mais pessoas? Digite n para terminar");
+			if (idade>=18) {
+				maior18++;
+			}			
+			
+			soma_idade = soma_idade + idade;
+			count++;
+			
+			if (idade>idade_velho) {
+				nome_velho = nome;
+				idade_velho = idade;
+			}			
+			
+			if (idade<idade_novo) {
+				nome_novo = nome;
+				idade_novo = idade;
+				
+			}
+			
+		} while (JOptionPane.showConfirmDialog(null, "Deseja inserir mais pessoas?", "Window", JOptionPane.YES_NO_OPTION)==0);
+		
+		System.out.println("Mais velho: " + nome_velho + ", " + idade_velho + " anos" );
+		System.out.println("Mais novo: " + nome_novo + ", " + idade_novo + " anos" );
+		System.out.println("Média das idades: " + (soma_idade/count));
+		System.out.println("Maiores de 18: " + maior18);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+
+}

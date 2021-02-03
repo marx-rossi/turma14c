@@ -1,0 +1,40 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class DecisaoSimples {
+
+	public static void main(String[] args) {
+		String nomedisciplina = JOptionPane.showInputDialog("Informe o nome da disciplina").toUpperCase(); 
+		float notap1 = Float.parseFloat(JOptionPane.showInputDialog("Informe a note da primeira prova"));
+		float notap2 = Float.parseFloat(JOptionPane.showInputDialog("Informe a note da segunda prova"));
+		float notafinal = (notap1 + notap2)/2;
+		if (notafinal>=5) {
+			System.out.println("Você está aprovado!");
+		}
+		if (notafinal<3) {
+			System.out.println("Ah não.... você é burro... tente outra vez...");
+		}
+		if (notafinal>=3 && notafinal<5) {
+			System.out.println("Você é burro... mas vou te dar outra chance");
+		}
+		
+		System.out.println("Nome da disciplina: " + nomedisciplina);
+		System.out.println("Nota final: " + notafinal);
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+
+	}
+
+}

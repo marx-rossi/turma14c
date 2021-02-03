@@ -1,0 +1,84 @@
+package br.com.universidade.beans;
+
+public class Aluno {
+
+	private int rm;
+	private String email;
+	private String nome;
+	private Endereco endereco;
+	
+
+
+	public Aluno(int rm, String email, String nome, Endereco endereco) {
+		super();
+		this.rm = rm;
+		this.email = email;
+		this.nome = nome;
+		this.endereco = endereco;
+	}
+
+
+
+	public Aluno() {
+		super();
+	}
+
+
+
+	public void setAll(int rm, String nome, String email) {
+		this.rm = rm;
+		this.nome = nome;
+		this.email = email;
+	}
+	
+	public String getAll() {
+		return "RM: " + rm + "\nNome: " + nome + "\nEmail: " + email;
+	}
+	
+	public String getUser() {
+		return "Usuário do e-mail: " + email.substring(0, email.indexOf("@"));
+	}
+	
+	public int getRm() {
+		return rm;
+	}
+	public void setRm(int rm) {
+		this.rm = rm;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+
+	public Endereco getEndereco() {
+		return endereco;
+	}
+
+
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
+	
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

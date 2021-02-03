@@ -1,0 +1,43 @@
+package br.com.heranca.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.heranca.beans.Formacao;
+import br.com.heranca.beans.Tecnologo;
+import br.com.heranca.util.Magica;
+
+public class TesteFormacao {
+
+	public static void main(String[] args) {
+		
+		int opcao = Integer.parseInt(JOptionPane.showInputDialog("1 - Tecnologo\n2 - Bacharelado\n3 - Medio"));
+		
+		
+		if (opcao == 1) {
+			formacao = new Tecnologo(Magica.i("Descrição"), 
+					Magica.i("Periodo: 1 Manhã / 2 Noite"), 
+					0, 
+					0, 
+					true);
+		}
+		Formacao objeto = new Formacao();
+		
+		objeto.getDescricao(JOptionPane.showInputDialog("Digite T para Tecnologo, B para acharelado ou M para Médio"));
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

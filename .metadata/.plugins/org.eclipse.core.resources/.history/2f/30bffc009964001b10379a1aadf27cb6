@@ -1,0 +1,31 @@
+package br.com.ecommerce.beans;
+
+public class ClientePF extends Cliente {
+	
+	private String pf;
+	private String rg;
+	
+	
+	
+	
+	public String getPf() {
+		return pf;
+	}
+	public void setPf(String pf) {
+		this.pf = pf;
+	}
+	public String getRg() {
+		return rg;
+	}
+	public void setRg(String rg) {
+		this.rg = rg;
+	}
+	
+		
+	
+	
+	
+	
+	
+
+}

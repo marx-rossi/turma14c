@@ -1,0 +1,38 @@
+package br.com.concessionaria.modelo;
+
+import br.com.brconcessionario.teste.Veiculo;
+
+public class TesteVeiculo {
+
+	public static void main(String[] args) {
+		
+		//Instanciando um objeto
+		
+		Veiculo objeto = new Veiculo();
+		objeto.modelo = "UNO"; //O acesso não está liberado pois "modelo" é privado
+		
+		
+		
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

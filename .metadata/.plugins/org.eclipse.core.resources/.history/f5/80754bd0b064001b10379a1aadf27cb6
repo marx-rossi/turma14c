@@ -1,0 +1,34 @@
+package br.com.heranca.beans;
+
+public class Formacao {
+	
+	private String descricao;
+	private int periodo;
+	private double mensalidade;
+	private int duracao;
+	
+	public void definirDuracao() {
+		
+	}
+	
+	public double exibirMedia(double ps1, double ps2) {
+		
+	}
+	
+	public double exibirMedia(double ps1, double ps2, double nac1, double nac2) {
+		
+	}
+	
+	public double exibirMedia(double ps1, double ps2, double nac1, double nac2, double am1, double am2) {
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

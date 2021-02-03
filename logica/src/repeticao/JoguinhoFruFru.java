@@ -1,0 +1,46 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class JoguinhoFruFru {
+
+	public static void main(String[] args) {
+		
+		int num1 = Integer.parseInt(JOptionPane.showInputDialog("Jogador 1, digite um número aleatório"));
+		int num2 = Integer.parseInt(JOptionPane.showInputDialog("Jogador 2, tente acertar o valor digitado pelo jogador 1"));
+		int tentativas = 1;
+		
+		while (num2!=num1) {
+			if (num2<num1) {
+				num2 = Integer.parseInt(JOptionPane.showInputDialog("O número digitado é menor, tente acertar o valor digitado pelo jogador 1"));
+								
+			}else {
+				num2 = Integer.parseInt(JOptionPane.showInputDialog("O número digitado é maior, tente acertar o valor digitado pelo jogador 1"));
+				
+			}
+				tentativas = tentativas + 1;
+			
+		}
+		
+		System.out.println("Parabéns Jogador 2, você acertou!");
+		System.out.println("Número: " + num1);
+		System.out.println("Tentativas: " + tentativas);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

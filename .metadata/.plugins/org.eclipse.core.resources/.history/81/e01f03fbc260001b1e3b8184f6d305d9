@@ -1,0 +1,44 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class IDH {
+
+	public static void main(String[] args) {
+		
+		String cidade = JOptionPane.showInputDialog("Insira o nome da cidade");
+		float idh = Float.parseFloat(JOptionPane.showInputDialog("Informe o IDH da cidade"));
+		int pop = Integer.parseInt(JOptionPane.showInputDialog("Informe a população da cidade"));
+		
+		if (pop>200000) {
+			
+			if (idh>0.9) { System.out.println("Cidade perfeita");
+				
+			}else if (idh<=0.9 && idh>0.75) { System.out.println("Cidade boa"); 
+				
+			}else {
+				System.out.println("Cidade precisa de cuidados");
+			} 
+		
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

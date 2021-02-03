@@ -1,0 +1,41 @@
+package br.com.ecommerce.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.universidade.beans.Aluno;
+
+public class implementacao {
+
+	public static void main(String[] args) {
+		
+		Beans produto = new Beans();
+		
+		while (JOptionPane.showConfirmDialog(null, "Inserir um novo produto?", "Novo Produto", JOptionPane.YES_NO_OPTION)==0) {
+			
+			;
+			aluno.setAll(Integer.parseInt(JOptionPane.showInputDialog("Informe o RM")), JOptionPane.showInputDialog("Informe o nome"), JOptionPane.showInputDialog("Informe o e-mail"));
+			System.out.println(aluno.getAll());
+			System.out.println(aluno.getUser());
+		}
+		
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
